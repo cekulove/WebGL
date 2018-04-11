@@ -7,7 +7,7 @@ let initShader=(gl,VS_SOURCE,FS_SOURCE)=>{
 
 let createProgram=(gl,VS_SOURCE,FS_SOURCE)=>{
     let vShader=loadShader(gl,gl.VERTEX_SHADER,VS_SOURCE);
-    let fShader=loadShader(gl,gl.FRRAGMENT_SHADER,FS_SOURCE);
+    let fShader=loadShader(gl,gl.FRAGMENT_SHADER,FS_SOURCE);
 
     let program=gl.createProgram();
     gl.attachShader(program,vShader);

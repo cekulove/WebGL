@@ -8,8 +8,8 @@ document.body.appendChild(canvas);
 
 let gl=canvas.getContext("webgl");
 
-let VS_SOURCE=documnent.querySelector("#vertex-shader").innerHTML;
-let FS_SOURCE=documnent.querySelector("#fragment-shader").innerHTML;
+let VS_SOURCE=document.querySelector("#vertex-shader").innerHTML;
+let FS_SOURCE=document.querySelector("#fragment-shader").innerHTML;
 if (!initShader(gl,VS_SOURCE,FS_SOURCE)){
     console.log("Failed to get the rendering context for WebGL !");
 }
