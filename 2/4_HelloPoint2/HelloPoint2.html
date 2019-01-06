@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Draw a point (2)</title>
+    <script type="x-shader/x-vertex" id="vertex-shader">
+        attribute vec4 a_Position;
+        void main()
+        {
+            gl_Position=a_Position;  //设置坐标
+            gl_PointSize=10.0;      //设置尺寸
+        }
+    </script>
+    <script type="x-shader/x-fragment" id="fragment-shader">
+        void main()
+        {
+            gl_FragColor=vec4(1.0,0.0,0.0,1.0); //设置颜色
+        }
+    </script>
+    <script src="../utils.js"></script>
+</head>
+<body onload="main()">
+    <canvas id="webgl" width="400" height="400" style="border:1px solid black">
+        Please use the browser supporting "canvas".
+    </canvas>
+    <script src="HelloPoint2.js"></script>
+</body>
+</html>
